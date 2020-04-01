@@ -1,0 +1,8 @@
+Modelo\Usuario_.class
+edu\upb\prueba3\resources\JavaEE8Resource.class
+Modelo\Usuario.class
+dao\UsuarioDAO.class
+edu\upb\prueba3\JAXRSConfiguration.class
+Modelo\TipoUsuario.class
+Modelo\TipoUsuario_.class
+Controlador\LoginController.class

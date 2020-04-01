@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        Lista
+        <h:form>
+            <h:dataTable value="#{LoginController.getlistDo()}" var="u" border="1"
+    			styleClass="order-table"
+    			headerClass="order-table-header"
+    			rowClasses="order-table-odd-row,order-table-even-row"
+    		>
+
+    			<h:column>
+    				<!-- column header -->
+    				<f:facet name="header">Correo</f:facet>
+    				<!-- row record -->
+    				#{u.correo}
+    			</h:column>
+    			
+    			<h:column>
+    				<f:facet name="header">Clave</f:facet>
+    				#{u.clave}
+    			</h:column>
+    			
+    			<h:column>
+    				<f:facet name="header">Estado</f:facet>
+    				#{u.estado}
+    			</h:column>
+    			
+    			<h:column>
+    				<f:facet name="header">Tipo</f:facet>
+    				#{u.tipo_usuario_id}
+    			</h:column>
+    		
+    		</h:dataTable>
+            
+        </h:form>
+        
+    </h:body>
+</html>
+
